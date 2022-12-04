@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple_calculator</string>
+    <string name="SUM">SUM</string>
+    <string name="DIFFERENCE">DIFFERENCE</string>
+    <string name="PRODUCT">PRODUCT</string>
+    <string name="CALCULATE">CALCULATE</string>
+    <string name="result">Result</string>
+    <string name="enter_number_2">Enter number 2</string>
+    <string name="enter_number_1">Enter number 1</string>
+</resources>

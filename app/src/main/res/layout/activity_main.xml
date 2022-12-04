@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA181D37"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:background="#F3EEEE"
+        android:backgroundTint="#590000"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="@string/enter_number_1"
+        android:importantForAccessibility="yes"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="46dp"
+        android:background="#F6EFEF"
+        android:backgroundTint="#00E2FF"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="@string/enter_number_2"
+        android:importantForAccessibility="yes"
+        android:inputType="number"
+        android:textColorHint="#616161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="198dp"
+        android:layout_height="61dp"
+        android:onClick="Calculate"
+        android:text="@string/CALCULATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:background="#F4F3F3"
+        android:hint="@string/result"
+        android:importantForAccessibility="no"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <RadioGroup
+        android:layout_width="128dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6C97BA"
+            android:text="@string/SUM" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A69E58"
+            android:text="@string/DIFFERENCE" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5AB7C3"
+            android:text="@string/PRODUCT" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
